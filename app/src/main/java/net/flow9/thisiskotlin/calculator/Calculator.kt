@@ -25,6 +25,9 @@ class Calculator{
             "*" -> {
                 result = MultiplyOperation().operate(num1, num2)
             }
+            "%" -> {
+                result = RestOperation().operate(num1, num2)
+            }
             else -> println("다시 시도해 주세요")
         }
         println("추가 연산 입력")
@@ -42,6 +45,9 @@ class Calculator{
             }
             "*" -> {
                 result = MultiplyOperation().operate(result, num3)
+            }
+            "%" -> {
+                result = RestOperation().operate(result, num3)
             }
             else -> println("다시 시도해 주세요")
         }
